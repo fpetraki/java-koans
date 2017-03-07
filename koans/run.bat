@@ -1,6 +1,7 @@
 @echo off
 cls
 setLocal EnableDelayedExpansion
+set PATH=%path%;F:\Program Files\Java\jdk1.8.0_91\bin\
 set CLASSPATH="%~dp0app\bin;"%~dp0\app\config"
 for /R "%~dp0\app\lib" %%a in (*.jar) do (
   set CLASSPATH=!CLASSPATH!;%%a
